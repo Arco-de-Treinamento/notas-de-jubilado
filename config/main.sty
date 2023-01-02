@@ -1,0 +1,73 @@
+%    Arquivo principal de configuração do preâmbulo
+%    Neste arquivo estão presentes configurações gerais e estéticas do documento
+%    Autor: Giordano Vicente | GitHub: @giordanorn
+
+
+% --------------------------------------------------------------------
+%                      Configurações gerais
+% --------------------------------------------------------------------
+
+\onehalfspacing    % Tamanho do espaçamento entre as linhas do texto
+
+
+% --------------------------------------------------------------------
+%                          Bibliografia
+% --------------------------------------------------------------------
+
+\addbibresource{./res/bib/bibliography.bib}    % Seta a bibliografia no diretorio
+
+
+% --------------------------------------------------------------------
+%              Contadores de Capítulo, Seção e Subseção
+% --------------------------------------------------------------------
+
+% Define que os títulos sejam enumerados até a profundidade das subsubseções
+\setcounter{secnumdepth}{3}
+
+% Exibe na tabela de conteúdos os títulos de profundidade até as seções
+\setcounter{tocdepth}{1}
+
+
+% --------------------------------------------------------------------
+%                        Tabelas e Figuras
+% --------------------------------------------------------------------
+
+% Estilo da legenda de todas as figuras e tabelas
+\captionsetup
+{
+    labelfont     = bf,          % Nome em Negrito
+    labelsep      = period,      % Nome terminado com um ponto final.
+    justification = centering,   % Texto centralizado
+    margin        = 40pt         % Espaçamento horizontal mínimo na direita e esquerda
+}
+
+% Estilo da legenda das figuras
+\captionsetup[figure]
+{
+    name = Imagem                % Nome alterado de Figura para Imagem 
+}
+
+
+% --------------------------------------------------------------------
+%                              Listas
+% --------------------------------------------------------------------
+
+% Definição do estilo da lista de enumeração padrão (enumerate)
+% Mais detalhes na documentação do pacote enumitem
+\setlist[enumerate,1]
+{
+    label = \emph{\roman*}),
+    ref   = \emph{\roman*})
+}
+
+\setlist[enumerate,2]
+{
+    label = \emph{\alph*}),
+    ref   = \emph{\alph*})
+}
+
+\setlist[enumerate,3]
+{
+    label = \arabic*),
+    ref   = \arabic*)
+}

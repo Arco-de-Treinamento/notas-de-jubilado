@@ -1,0 +1,37 @@
+% --------------------------------------------------------------------
+%                      Definições de formatacao
+% --------------------------------------------------------------------
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}   % Regras de formatacao
+
+\makeatletter                           % Customizacao do macro printtitle
+\def\printtitle{%                       
+    {\centering \@title\par}}
+\makeatother                                    
+
+\makeatletter                           % Customizacao do macro printauthor
+\def\printauthor{%                  
+    {\centering \large \@author}}               
+\makeatother                            
+
+
+% --------------------------------------------------------------------
+%                              Metadata
+% --------------------------------------------------------------------
+\title{ \normalsize \textsc{UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE\\INSTITUTO METRÓPOLE DIGITAL}    % Subtitle
+            \\[2.0cm]                               % 2cm spacing
+            \HRule{0.5pt} \\                        % Upper rule
+            \LARGE \textbf{\uppercase{Notas de jubilado na disciplina IMD1001 -- Matemática Elementar}}    % Title
+            \HRule{2pt} \\ [0.5cm]      % Lower rule + 0.5cm spacing
+            \normalsize \today          % Todays date
+            \\[2.0cm]
+            \normalsize \textbf{MATERIAL NÃO OFICIAL}\\
+            \normalsize{Em hipótese nenhuma utilize apenas esse material para estudo.}
+            \\[0.5cm]
+            \textit{Depois não diga que eu não avisei...}
+        }
+
+\author{
+        José Manoel Freitas da Silva\\
+        \texttt{GitHub: JosManoel} \\
+}

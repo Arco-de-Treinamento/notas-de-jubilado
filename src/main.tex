@@ -1,0 +1,44 @@
+% Difinicoes iniciais do formato do documento
+\documentclass[a4paper,12pt, oneside]{book}
+
+% Importacoes
+\usepackage{config/packages}
+\usepackage{config/main}
+\usepackage{config/commands}
+\usepackage{config/environments}
+\usepackage{config/titlepage}
+\usepackage{macros/macros}
+
+\begin{document}
+    \nocite{*}     % Inclui as referências contidas nos .bib
+    \frontmatter   % Define os numeros romanos para a paginacao
+    
+
+    % Definicoes da capa
+    \thispagestyle{empty}
+    \printtitle
+    \vfill
+    \printauthor
+    
+    % Incluindo o Sumario
+    \tableofcontents
+
+        
+    \mainmatter    % Reseta a paginacao para numeracao convencional
+
+    % Importa consideracoes
+    \importsection{consideracoes}
+
+    % Importa os capítulos na ordem certa
+    %\importchapter{conjuntos}
+    %\importchapter{conjuntos-numericos}
+    %\importchapter{equacoes-e-inequacoes}
+    %\importchapter{principio-da-inducao-finita}
+    %\importchapter{funcoes}
+    %\importchapter{progressoes}
+    %\importchapter{funcoes-reais-e-graficos}
+    %\importchapter{funcoes-polinomiais}
+    %\importchapter{funcoes-exponenciais-e-logaritmicas}
+    %\importchapter{funcoes-trigonometricas}
+
+\end{document}
