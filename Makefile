@@ -1,19 +1,22 @@
-.PHONY: default view pdf clean cleanAll updateMacros cleanFiles
+# Compilacao do Documento com latexmk
+# Autor: Giordano Vicente | GitHub: @giordanorn
+
+.PHONY: default view pdf clean cleanall macros
 
 default: pdf
 
-pdf: updateMacros
+pdf: macros
 	latexmk -pdf
 
-view: updateMacros
+view: macros
 	latexmk -pdf -pv
 
 clean:
 	latexmk -c
 
-cleanAll:
+cleanall:
 	latexmk -C
 
-updateMacros:
+macros:
 	git submodule update --init --recursive
 	git submodule foreach git pull origin master
