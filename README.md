@@ -69,7 +69,7 @@ make
 
 <h2 id="licenca">📝 Licença</h2>
 
-- Este projeto está sob a licença [MIT](https://github.com/JosManoel/Bootcomp-MRV_CRUD-dotNet/blob/main/LICENSE).
+- Este projeto está sob a licença [MIT](https://github.com/JosManoel/notas-de-jubilado/blob/main/LICENSE).
 
 ***
 
