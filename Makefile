@@ -16,6 +16,7 @@ clean:
 
 cleanall:
 	latexmk -C
+	rm -rf *.run.xml
 
 macros:
 	git submodule update --init --recursive

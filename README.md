@@ -26,7 +26,7 @@
 
 Esse repositório mantém as notas de jubilado da disciplina Matemática Elementar do Bacharelado em Tecnologia da Informação da Universidade Federal do Rio Grande do Norte.
 
-O **"Notas de Jubilado"** não é um material oficial da matéria, sendo unicamente uma **paródia** das [notas de aula](https://github.com/matematica-elementar/notas-de-aula) oficial feito com o único intuito de descontrair durante os estudos da matéria. Em hipótese nenhuma utilize esse artigo como única fonte de conhecimento para a matéria. 
+As **"Notas de Jubilado"** não são um material oficial da matéria, sendo estritamente uma **paródia** das [notas de aula](https://github.com/matematica-elementar/notas-de-aula) oficiais, construídas com o intuito de descontrair durante os estudos da matemática discreta. Em hipótese nenhuma utilize esse artigo como única fonte de conhecimento.
 
 _Considere-se avisado..._
 
@@ -41,14 +41,14 @@ Decidi criar o Notas de Jubilado como uma forma de aprender um pouco de [LaTeX](
 
 Neste projeto eu também tentarei responder algumas perguntas recorrentes nos meus núcleos de conversa. A matemática discreta tende a parecer desnecessariamente complicada para um recém-iniciado na área. Por vezes surgiam questionamentos como **"pra quê estou estudando isso?"** ou **"cadê o código?"**. O material original da matéria foca apenas em te mostrar o conteúdo, sem demostrar sua aplicação direta na área. Sendo assim, a cada capítulo também existirá um tópico referente a uma aplicação do tema na ciência da computação.
 
-É importante ressaltar que, assim como você, caro leitor curioso, eu também sou um estudante lascado. Por isso, o desenvolvimento do material seguirá o insano ritmo de aprendizado de um universitário brasileiro. 
+É importante ressaltar que, como você, caro leitor curioso, eu também sou um estudante lascado. Por isso, o desenvolvimento do material seguirá o insano ritmo de aprendizado de um universitário brasileiro. 
 
 
 ***
 
 <h2 id="compilacao">💻 Compilação</h2>
 
-Assim como nas notas de aula, as notas de jubilado utiliza o LaTeX para produzir o material. Desde modo, caso você seja louco o suficiente para estudar o tema ao nível de código, será necessário que o pacote [TexLive](https://tug.org/texlive/) e o utilitário [GNU Make](https://www.gnu.org/software/make/) estejam instalados em sua máquina.
+Assim como nas notas de aula, as notas de jubilado utilizam o LaTeX para produzir o material. Desde modo, caso você seja louco o suficiente para estudar o tema ao nível de código, será necessário que o pacote [TexLive](https://tug.org/texlive/) e o utilitário [GNU Make](https://www.gnu.org/software/make/) estejam instalados em sua máquina.
 
 Assim como de costume, para compilar o projeto e gerar um documento em formato pdf basta utilizar o comando abaixo:
 

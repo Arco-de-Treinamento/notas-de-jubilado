@@ -11,8 +11,8 @@
 
 \begin{document}
     \nocite{*}     % Inclui as referências contidas nos .bib
-    \frontmatter   % Define os numeros romanos para a paginacao
     
+    \frontmatter   % Define os numeros romanos para a paginacao
 
     % Definicoes da capa
     \thispagestyle{empty}
@@ -20,6 +20,9 @@
     \vfill
     \printauthor
     
+    \newpage
+    \importsection{consideracoes}
+
     % Incluindo o Sumario
     \tableofcontents
 
@@ -27,7 +30,6 @@
     \mainmatter    % Reseta a paginacao para numeracao convencional
 
     % Importa consideracoes
-    \importsection{consideracoes}
 
     % Importa os capítulos na ordem certa
     %\importchapter{conjuntos}
