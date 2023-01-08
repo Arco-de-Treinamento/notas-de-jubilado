@@ -16,8 +16,8 @@ clean:
 
 cleanall:
 	latexmk -C
-	rm -rf *.run.xml
+	rm -rf *.run.xml *.bbl
 
 macros:
-	git submodule update --init --recursive
+ 	git submodule update --init --recursive
 	git submodule foreach git pull origin master
