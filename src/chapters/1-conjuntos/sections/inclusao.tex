@@ -1,0 +1,71 @@
+\section{Inclusão}
+
+A \emph{inclusão} inicialmente estabelece uma relação de \textbf{subconjunto}, indicando quando um conjunto $B$ está ou não incluído no conjunto $A$, utilizando \entreaspas{$\contido$} quando queremos dizer que $B$ está \emph{contido} em $A$. Também podemos utilizar a notação $B \contem A$ para situações onde o conjunto $A$ está \emph{contido} em $B$. 
+
+Em relações onde um conjunto $A$ possui pelo menos um elemento que não está \emph{incluído} em $B$, dizemos que $B \naocontem A$ ou $A \naocontido B$. Em outras palavras, existe um elemento $x$ tal que $x \em A$ mas $x \naopertence B$.
+
+Desse modo, podemos dizer que um conjunto $A$ está incluído em $B$ quando \textbf{todos} os elementos de $A$ também são elementos de $B$. 
+
+\begin{example}
+    \label{exe:conjuntos-e-subconjuntos}
+    Considere o conjunto $A = \conjunto{a, b, c, d}$. Dada a afirmação anterior, podemos concluir que:
+    \begin{enumerate}
+        \item $\conjunto{a, b} \contido A$
+        \item $\conjunto{c, d} \contido A$
+        \item $\conjunto{e ,c ,f} \naocontido A$
+        \item $\conjunto{a, b, c, d} \contido A$
+    \end{enumerate}
+\end{example}
+
+O último item ainda traz uma segunda aplicação da relação de \emph{inclusão}, denominada \textbf{igualdade}. Segundo a definição 3 do livro "Matemática Discreta e Suas Aplicações", escrito por Kenneth H. Rosen, dois conjuntos são iguais \textbf{se e somente se} possuem os mesmo elementos \cite[pp. 113]{kenneth2010}. Desde modo, como o conjunto $\conjunto{a, b, c, d}$ e $A$ possuem estritamente os mesmos elementos, podemos concluir que $\conjunto{a, b, c, d} = A$.
+
+A relação de \emph{inclusão} possui ainda outras propriedades, descritas a seguir:
+
+\begin{definition}[Propriedades da inclusão]
+	Para quaisquer conjuntos $A$, $B$ e $C$, são válidas as propriedades a seguir:
+	\begin{enumerate}
+		\item
+			\label{inclusao:reflexividade}
+			\emph{Reflexividade}: $A \contido A$;
+		\item
+			\label{inclusao:antissimetria}
+			\emph{Antissimetria}: Se $A \contido B$ e $B \contido A$, então $A = B$;
+		\item
+			\label{inclusao:transitividade}
+			\emph{Transitividade}: Se $A \contido B$ e $B \contido C$, então $A \contido C$.
+	\end{enumerate}
+\end{definition}
+% Exemplo retirado das notas de aula. | Disponível em: https://github.com/matematica-elementar/notas-de-aula
+
+\begin{definition}[Inclusão Própria]
+	Dados $A$ e $B$ conjuntos, dizemos que $A$ é um \emph{subconjunto próprio} de $B$ quando $A \contido B$ mas $A \diferente B$. Quando isso ocorre, utilizamos a notação $A \contidoproprio B$.
+\end{definition}
+% Exemplo retirado das notas de aula. | Disponível em: https://github.com/matematica-elementar/notas-de-aula
+
+\begin{remark}
+    Todas essas definições estão descritas nas notas de aulas com uma definição detalhada. A leitura do material original é fortemente encorajada.
+\end{remark}
+
+Além dessas propriedades ainda possuímos a \emph{inclusão universal do $\vazio$}, uma relação de inclusão onde o conjunto vazio é incluído em todos os conjuntos. Essa relação de inclusão se aplica a todos os conjuntos, sem exceção. Logo, temos que o conjunto vazio é um subconjunto de qualquer conjunto, independentemente de seus elementos.
+
+\begin{proposition}[Inclusão universal do $\vazio$]
+	\label{prop:inclusao-universal-vazio}
+	Para todo conjunto $A$, tem-se que o conjunto $\vazio$ é subconjunto de $A$ (em símbolos: $\emptyset \subset A$).
+\end{proposition}
+
+A \emph{inclusão universal do $\vazio$} pode ser melhor explicada pelo \emph{conjunto das partes}, formado por todos os \textbf{subconjuntos} de um determinado conjunto.
+
+\begin{definition}[Conjunto das Partes]
+	\label{def:conjunto-das-partes} 
+	Dado um conjunto $A$, chamamos de \emph{conjunto das partes} de $A$ o conjunto formado por \textbf{todos} os seus subconjuntos, e denotamo-lo $\partes A$. Em símbolos:
+	\[
+		\partes A = \conjunto{ X \taisque X \contido A}.
+	\]
+\end{definition}
+
+Desse modo, como o conjunto $\vazio$ é, por definição, o conjunto formado por \textbf{nenhum elemento}, ele também está inserido nos subconjutos de $A$.
+
+\begin{example}
+	\label{exem-powerset-basico}
+	Dado $A = \conjunto{1, 2, 3}$, temos que o conjunto das partas de $A$ é formado por \textbf{todos} os subconjuntos de $A$, logo, $\partes A = \conjunto{\emptyset, \unitario{1}, \unitario{2}, \unitario{3}, \conjunto{1,2}, \conjunto{2,3}, \conjunto{1,3}, A}$.
+\end{example}
