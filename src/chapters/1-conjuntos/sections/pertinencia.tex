@@ -1,0 +1,29 @@
+\section{Pertinência}
+
+Quanto a teoria dos conjuntos, assunto abordado nesse capítulo, temos que a \emph{pertinência} pode ser entendida como uma relação estabelecida entre um \emph{objeto} e outro \emph{conjunto}. Desde modo, a \emph{pertinência} pode ser entendida como \emph{\entreaspas{fazer parte de}}. 
+
+Para representar a pertinência, a notação matemática dispoe de dois simbolos, sendo o \entreaspas{$\pertence$} utilizado quando tratamos de uma relação de pertencimento e \entreaspas{$\naopertence$} quando temos o caso oposto.
+
+\begin{example}
+    Se $x$ é um elemento e $A$ é um conjunto, podemos dizer que \entreaspas{o número 2 pertence ao conjunto dos números pares} ou escrever $2 \pertence \conjunto {2, 4, 6, 8, ...}$, para indicar que o número 2 faz parte do conjunto dos números pares.
+\end{example}
+
+\begin{example}
+    Se $x$ é um elemento e $A$ é um conjunto, podemos dizer que \entreaspas{o número 3 não pertence ao conjunto dos números pares} ou escrever $3 \naopertence \conjunto {2, 4, 6, 8, ...}$, para indicar que o número 3 não faz parte do conjunto dos números pares.
+\end{example}
+
+Note que não é correto afirmar que um elemento $x$ que pertence a um conjunto $A$ está \entreaspas{contido} ou é \entreaspas{parte} dele, uma vez que essa afirmação implica que o elemento $x$ e o conjunto $A$ são coisas distintas, indo contra a definição de \emph{pertinência} (\emph{\entreaspas{fazer parte de}}), já que um objeto que faz parte de um todo não pode diferir do seu conjunto.
+
+A \emph{pertinência} também está relacionada ao \entreaspas{nível} em que ocorre a interação. Desde modo, quando possuímos um conjunto $A$ tal que $A = \conjunto {B,C}$ não é correto afirmar que os elementos pertencentes aos conjuntos $B$ e $C$ também são pertencentes ao conjunto $A$, visto que o conjunto é estritamente formado apenas pelos conjuntos $B$ e $C$. Essa característica pode ser melhor representada no exemplo a seguir:
+
+\begin{example}
+    \label{exe:conjuntos-de-conjuntos-explicito}
+    Considere o conjunto $A = \conjunto{\conjunto{1, 2},\unitario{2}, 1}$. Note que:
+    \begin{enumerate}
+        \item $\conjunto{1, 2} \pertence A$
+        \item $\unitario{2} \pertence A$
+        \item $1 \pertence A$
+        \item $2 \naopertence A$
+    \end{enumerate}
+\end{example}
+% Exemplo retirado das notas de aula. | Disponível em: https://github.com/matematica-elementar/notas-de-aula
