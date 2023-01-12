@@ -1,0 +1,56 @@
+\subsection{Propriedades da união e interseção}
+
+As operações descritas anteriormente possui algumas propriedades que incluem o \emph{conjunto universo}, denotado por $\universo$. O \emph{conjunto universo} pode ser definido como conjunto que contém todos os elementos relevantes para um determinado contexto ou problema. O conjunto universo geralmente é especificado antes de se definir outros conjuntos, utilizado como referência para os elementos que podem ser incluídos nos conjuntos relacionados. 
+
+Desde modo, para quaisquer conjuntos $A$, $B$ e $C$, dado um \emph{conjunto universo} $\U$, tem-se que:
+
+\begin{enumerate}
+    \item
+        \begin{enumerate}
+            \label{prop:uniao-e-intersecao-inclusao}
+            \item
+                $A \contido {A \uniao B}$;
+            \item
+                ${A \inter B} \contido A$.
+        \end{enumerate}
+
+    \item
+        União/interseção com o conjunto universo:
+        \begin{enumerate}
+            \item $A \uniao \universo = \universo$;
+            \item $A \inter \universo = A$.
+        \end{enumerate}
+    
+    \item
+        União/interseção com o conjunto vazio:
+        \begin{enumerate}
+            \item $A \uniao \vazio = A$;
+            \item $A \inter \vazio = \vazio$.
+        \end{enumerate}
+
+    \item
+        \emph{Comutatividade}:
+        \begin{enumerate}
+            \item $A \uniao B = B \uniao A$;
+            \item $A \inter B = B \inter A$.
+        \end{enumerate}
+
+    \item
+        \emph{Associatividade}:
+        \begin{enumerate}
+            \item $\prn{A \uniao B} \uniao C = A \uniao \prn{ B \uniao C}$;
+            \item $\prn{A \inter B} \inter C = A \inter \prn{ B \inter C}$.
+        \end{enumerate}
+
+    \item
+        \emph{Distributividade}, de uma em relação à outra:
+        \begin{enumerate}
+            \item $A \inter (B \uniao C) = (A \inter B) \uniao (A \inter C)$;
+            \item $A \uniao (B \inter C) = (A \uniao B) \inter (A \uniao C)$.
+        \end{enumerate}
+
+\end{enumerate}
+
+\begin{remark}
+    A demonstração de cada propriedade está disponível nas Notas de Aula da disciplina de Matemática Elementar\cite[pp. 7 - 8]{notas-de-aula}.
+\end{remark}
