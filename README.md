@@ -50,7 +50,9 @@ Neste projeto eu também tentarei responder algumas perguntas recorrentes nos me
 
 Assim como nas notas de aula, as notas de jubilado utilizam o LaTeX para produzir o material. Desde modo, caso você seja louco o suficiente para estudar o tema ao nível de código, será necessário que alguma distribuição TeX, como o [TexLive](https://tug.org/texlive/), e o utilitário [GNU Make](https://www.gnu.org/software/make/) estejam instalados em sua máquina.
 
-Certifique-se de também possuir o [Biber](https://biblatex-biber.sourceforge.net/) para que o sumário e as citações possam funcionar corretamente.
+Certifique-se de também possuir o [Biber](https://biblatex-biber.sourceforge.net/), para que o sumário e as citações possam funcionar corretamente, e o [Pygments](https://pygments.org/), para que possa incluir trechos de código no documento em formato de snippet.
+
+> Note que para a utilização do Pygments e do package Minted é necessário a adição da flag **-shell-escape**. Para mais informações consulte a [documentação](https://github.com/gpoore/minted/blob/master/source/minted.pdf).
 
 Assim como de costume, para compilar o projeto e gerar um documento em formato pdf basta utilizar o comando abaixo:
 
