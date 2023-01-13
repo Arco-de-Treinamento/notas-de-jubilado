@@ -1,0 +1,27 @@
+\section{Aplicação da teoria dos conjuntos na computação}
+
+A teoria dos conjuntos possui inúmeras aplicações no desenvolvimento de software, especialmente em linguagens que trabalham com programação orientada a objetos. Um exemplo comum é a utilização dos \textbf{sets} para manipulação de dados.
+
+Em Python, por exemplo, é possível utilizar os sets para criar conjuntos de dados conforme o necessário. Assim como os conjuntos matemáticos, os sets são definidos como um tipo de dado desordenado que não possui elementos duplicados.\\
+
+\begin{codesnip}{Exemplo em Python}{python}
+    # Cria uma lista com elementos repetidos
+    lista = [1, 2, 3, 2, 4, 3, 5, 6, 5]
+
+    # Converte a lista em um conjunto para remover elementos repetidos
+    conjunto = set(lista)
+
+    # Imprime o conjunto
+    print(conjunto)
+    # Output: {1, 2, 3, 4, 5, 6}
+\end{codesnip}
+
+Neste exemplo, a classe "set" é usada para criar um conjunto a partir da lista. O conjunto remove automaticamente quaisquer elementos repetidos e mantém somente os elementos únicos. Além disso, a classe set possibilita operações como união, interseção, diferença entre conjuntos, subconjunto e etc.
+
+Outra aplicação é a utilização de conjuntos para verificar a pertença de um elemento a um conjunto, é muito mais rápido do que percorrer uma lista ou dicionário verificando a existencia de um elemento.\\
+
+Para mais informações sobre a utilização de sets em Python acesse: \link{https://pythonacademy.com.br/blog/sets-no-python}{Sets no Python}. \\
+
+
+
+

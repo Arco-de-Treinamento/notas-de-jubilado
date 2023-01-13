@@ -6,10 +6,10 @@
 default: pdf
 
 pdf: macros
-	latexmk -pdf
+	latexmk -pdf -shell-escape
 
 view: macros
-	latexmk -pdf -pv
+	latexmk -pdf -shell-escape -pv
 
 clean:
 	latexmk -c
