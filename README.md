@@ -60,16 +60,23 @@ Assim como de costume, para compilar o projeto e gerar um documento em formato p
 make
 ```
 
-Caso queira compilar e automaticamente abrir o arquivo em seu leitor de pdf local, utilize o seguinte comando:
+Por padrão, o arquivo é compilado em **Light Mode**. Caso queira troca para o modo **Dark Mode** utilize:
 
 ```sh
-make view
+make darkMode
 ```
+
+Se tiver interesse em testar ou alterar o documento, opte pela opção **debug**, que atualiza o documento a cada nova modificação realizada.
+
+```sh
+make debug
+```
+> Por padrão, o modo **debug** compila o documento em **Dark Mode**. Não existe nenhum motivo em especial para isso, apenas a proteção dos meus olhos.
 
 Existe ainda a possibilidade de eliminar todos os arquivos gerados pela última compilação, incluindo o pdf. Para esse caso sugerimos que opte por:
 
 ```sh
-make cleanall
+make clean
 ```
 
 > Note que ao compilar o documento também será realizada a atualização das macros utilizadas no projeto, hospedadas no [GitHub](https://github.com/matematica-elementar/macros).

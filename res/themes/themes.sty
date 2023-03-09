@@ -1,0 +1,43 @@
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{themes}[2023/03/09 v1.4 Notas de Jubilado Themes]
+
+%Bibliotecas necessarias
+\RequirePackage{xcolor}
+\RequirePackage{pagecolor}
+
+\ifdefined\darkmode
+    \pagecolor{black}
+    \color{white}
+
+    %Snippet para codigo formato: \begin{codesnip}{Titutlo}{linguagem}
+    \newtcblisting{codesnip}[3][]{
+        listing engine=minted, 
+        listing only,
+        #1,                       %Codesnip
+        title=#2, 
+        minted language=#3, 
+        colback=codesnipDarkMode, %Cor de fundo do codesnip
+        minted options={
+            style = paraiso-dark, %Estilo do texto
+        },
+    }
+
+\else
+    \pagecolor{white}
+    \color{black}
+
+    %Snippet para codigo formato: \begin{codesnip}{Titutlo}{linguagem}
+    \newtcblisting{codesnip}[3][]{
+        listing engine=minted, 
+        listing only,
+        #1,                         %Codesnip
+        title=#2, 
+        minted language=#3, 
+        colback=codesnipBackground, %Cor de fundo do codesnip
+        minted options={
+            style = tango,          %Estilo do texto
+        },
+    }
+\fi
+
+\endinput

@@ -19,6 +19,3 @@
 \newcommand{\importitem}[1]{\import{}{#1.tex}}
 \newcommand{\importprecontents}[1]{\subimport{src/sections}{#1.tex}}
 \newcommand{\importtikz}[1]{\input{\resources/tikz/#1.tex}}
-
-%Snippet para codigo formato: \begin{codesnip}{Titutlo}{linguagem}
-\newtcblisting{codesnip}[3][]{listing engine=minted, listing only,#1, title=#2, minted language=#3}
