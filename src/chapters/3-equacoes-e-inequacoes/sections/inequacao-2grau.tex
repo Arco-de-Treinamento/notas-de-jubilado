@@ -1,0 +1,44 @@
+\section{Inequação do 2° grau}
+
+Assim como a \emph{inequação do 1° grau}, a \emph{inequação do 2° grau} é uma desigualdade algébrica que pode ser representada por uma expressão matemática possua os sinais de desigualdade. Uma \emph{inequação do 2° grau} pode ser representada da seguinte forma:
+
+\begin{align*}
+    ax^2 + bx + c &< 0;   \\
+    ax^2 + bx + c &> 0;   \\
+    ax^2 + bx + c &\le 0; \\
+    ax^2 + bx + c &\ge 0;
+\end{align*}
+
+onde $a, b, c \nos \reais$, com $a \diferente 0$.
+
+Em inequações do 2° grau comumente temos o uso do estudo de sinal na resolução do problema.  
+
+\begin{example}
+    Resolva as seguintes inequações:
+    \begin{enumerate}[a)]
+        \item $x^2 -3x +2 > 0$;
+        \item $x^2 -3x +2 \le 0$.
+    \end{enumerate}
+\end{example}
+
+Observe que: 
+\begin{align*}
+    x^2 - 3x + 2 = (x-2)(x-1).
+\end{align*}
+
+Logo, teremos o seguinte \aspas{estudo do sinal} da expressão $(x-2)(x-1)$:
+
+\begin{figure}[H]
+	\centering
+	\importtikz{estudo-sinal-ineq-2-grau}
+	\caption{Estudo do sinal de $x^2 - 3x + 2$}
+\end{figure}
+
+Assim, a solução $S$ para inequação $x^2 -3x +2 > 0$ será $S = \conjunto{ x \nos \reais \taisque x < 1 \ou x > 2 }$. Analogamente, a solução $S\linha$ para a inequação $x^2 - 3x + 2 \menorigual 0$ será $S\linha = \conjunto{ x \nos \reais \taisque 1 \menorigual x \menorigual 2 }$. Ademais, $S\linha$ pode ser obtida a partir de $S$ da seguinte forma:
+
+\begin{align*}
+    S\linha &= S\complementar \\ 
+            &= \conjunto{ x \nos \reais \taisque x < 1 \ou x > 2 }\complementar \\ 
+            &= \conjunto{ x \nos \reais \taisque x \maiorigual 1 \e x \menorigual 2 } \\ 
+            &= \conjunto{ x \nos \reais \taisque 1 \menorigual x \menorigual 2 }.
+\end{align*}

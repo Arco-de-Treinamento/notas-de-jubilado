@@ -1,0 +1,31 @@
+\section{Equações e inequações na computação}
+
+As \emph{equações e inequações} podem ser observadas em diversas áreas da computação, como em condições logicas ou na ordenação de dados. Nesse caso, temos um exemplo de utilização do algoritmo de ordenação \textbf{Bubble Sort} utilizando a linguagem Dart.\\
+
+\begin{codesnip}{Exemplo em Dart}{Dart}
+void main() {
+    List<int> lista = [42, 789, 301, -15, 0, -57, 8001, 1, 9999];
+    int temp;
+    
+    for (int i = 0; i < lista.length; i++) {
+        for (int j = 1; j < lista.length; j++) {
+            if (lista[j] < lista[j - 1]) {
+                temp = lista[j];
+                lista[j] = lista[j - 1];
+                lista[j - 1] = temp;
+                
+                print(temp);
+            }
+        }
+    }
+    
+    //Resultado: [-57, -15, 0, 1, 42, 301, 789, 8001, 9999]
+    print(lista);
+}
+\end{codesnip}
+
+No trecho de código anterior utilizamos diversas inequações em condições lógicas para determinar as ações que ocorreram durante a execução do programa. O Dart ainda pode ser utilizado no desenvolvimento de aplicações mobile, com o FLutter. Caso possua interesse em se aprofundar, acesse: \link{https://dart.dev/guides}{Documentação Dart}. \\
+
+
+
+

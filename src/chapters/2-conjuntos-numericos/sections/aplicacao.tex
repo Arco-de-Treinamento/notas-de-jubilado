@@ -5,21 +5,21 @@ Os \emph{conjuntos numéricos} possuem ampla utilização em diversas áreas da 
 Outra importante aplicação está na geometria computacional. Em C, por exemplo, podemos utilizar os conjuntos para calcular a distância entre pontos. \\
 
 \begin{codesnip}{Exemplo em C}{C}
-    double x1, y1, x2, y2, distance;
+double x1, y1, x2, y2, distance;
 
-    // recebe a posicao do ponto 1
-    printf("Informe as coordenadas do ponto 1: x1, y1 :\n");
-    scanf("%lf,%lf", &x1, &y1);
+// recebe a posicao do ponto 1
+printf("Informe as coordenadas do ponto 1: x1, y1 :\n");
+scanf("%lf,%lf", &x1, &y1);
 
-    // recebe a posicao do ponto 2
-    printf("Informe as coordenadas do ponto 2: x2, y2:\n");
-    scanf("%lf,%lf", &x2, &y2);
+// recebe a posicao do ponto 2
+printf("Informe as coordenadas do ponto 2: x2, y2:\n");
+scanf("%lf,%lf", &x2, &y2);
 
-    // fórmula de Pitágoras
-    distance = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
+// fórmula de Pitágoras
+distance = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
 
-    // Imprimindo o resultado
-    printf("A distância entre os pontos é %lf\n", distance);
+// Imprimindo o resultado
+printf("A distância entre os pontos é %lf\n", distance);
 \end{codesnip}
 
 Neste exemplo, utilizamos as funções \textbf{pow} e \textbf{sqrt}, respectivamente utilizadas no cálculo de potência e raiz quadrada, da biblioteca \textbf{math.h}, para calcular a distância entre o primeiro e o segundo ponto através da fórmula de Pitágoras.

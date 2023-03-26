@@ -12,8 +12,10 @@
 
 
 \begin{document}
-    \nocite{*}     % Inclui as referências contidas nos .bib
-    \frontmatter   % Define os numeros romanos para a paginacao
+    \nocite{*}                % Inclui as referências contidas nos .bib
+    \setcounter{tocdepth}{3}  % Seta o sumário para 3 niveis
+
+    \frontmatter              % Define os numeros romanos para a paginacao
 
     % Definicoes da capa
     \thispagestyle{empty}
@@ -27,7 +29,7 @@
     % Incluindo o Sumario
     \tableofcontents
         
-    \mainmatter    % Reseta a paginacao para numeracao convencional
+    \mainmatter               % Reseta a paginacao para numeracao convencional
 
 
     % Importa os capítulos na ordem certa
