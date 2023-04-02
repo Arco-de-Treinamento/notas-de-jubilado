@@ -1,0 +1,71 @@
+\section{O Princípio da Indução Finita na computação}
+
+O \emph{Princípio da Indução Finita} pode ser visto com frequência em provas de correção de algoritmos e estruturas de dados recursivas, como o algoritmo de Fibonacci ou o algoritmo de busca binária, que podem ser verificados por indução finita para garantir que eles funcionam corretamente para todos os tamanhos de entrada.
+
+Tomando o algoritmo de ordenação \textbf{mergesort} como exemplo, iremos provar que o algoritmo ordena corretamente um array de tamanho $n$.
+
+\begin{itemize}
+    \item \emph{Caso base} [$n = 1$]: Isso é trivial, pois um array com apenas um elemento por definição já está ordenado;
+    
+    \item \emph{Passo indutivo}: Assumimos que a propriedade é verdadeira para um array de tamanho \textbf{n = k}, e então provaremos que é verdadeira para \textbf{n = k + 1}.
+\end{itemize}
+
+Considere um array \textbf{arr} de tamanho \textbf{k + 1} e que será utilizado para provar que o array resultante \textbf{sortedArr} também é ordenado em ordem crescente. Para isso, mostraremos que para qualquer par de índices $i$ e $j$ onde $0 <= i < j < k+1$, temos:
+
+\begin{align*}
+    sortedArr[i] <= sortedArr[j]
+\end{align*}
+
+\begin{codesnip}{Exemplo em JavaScript - Mergesort}{JavaScript}
+const arr = [47, 71, 51, -45, 3, 1, -93, -12];
+
+function mergeSort(arr) {
+    // Verifica se o array possui meio
+    if (arr.length < 2) return arr;
+    // Econtra o meio e cria dois novos arrays partindo do original
+    const middle = Math.floor(arr.length / 2);
+    const arrLeft = arr.slice(0, middle);
+    const arrRight = arr.slice(middle, arr.length);
+    // Retorna o array ordenado
+    return merge(mergeSort(arrLeft), mergeSort(arrRight));
+}
+
+function merge(arrLeft, arrRight) {
+    let leftIndex = 0;
+    let rightIndex = 0;
+    const result = [];
+    // Percorre os dois arrays e adiciona o menor valor a result
+    while (leftIndex < arrLeft.length && 
+            rightIndex < arrRight.length) {
+    if (arrLeft[leftIndex] < arrRight[rightIndex]) {
+        result.push(arrLeft[leftIndex]);
+        leftIndex++;
+    } else {
+        result.push(arrRight[rightIndex]);
+        rightIndex++;
+        }
+    }
+    // Retorna o array result concatenado com o arrLeft e arrRight
+    return result
+    .concat(arrLeft.slice(leftIndex))
+    .concat(arrRight.slice(rightIndex));
+}
+
+const sortedArr = mergeSort(arr);
+console.log(sortedArr);    
+// Resultado: 93, -45, -12, 1, 3, 47, 51, 71
+\end{codesnip}
+
+\begin{itemize}
+    \item \emph{Se $i$ e $j$ estiverem ambos em \textbf{arrLeft} ou em \textbf{arrRight}}: Então a propriedade de ordenação segue da hipótese de indução;
+    
+    \item \emph{Se $i$ e $j$ estiverem um em \textbf{arrLeft} e outro em \textbf{arrRight}}: Então \textbf{sortedArr[i] e sortedArr[j]} são, respectivamente, o menor elemento não processado em arrLeft e arrRight. Portanto, \textbf{sortedArr[i] <= arrLeft[x] e sortedArr[j] <= arrRight[y]} para algum x e y. Como arrLeft e arrRight são ordenados, temos \textbf{arrLeft[x] <= arrRight[y]}, e portanto, \textbf{sortedArr[i] <= arrLeft[x] <= arrRight[y] <= sortedArr[j]}.
+\end{itemize}
+
+Dessa forma, provamos por indução finita que o algoritmo mergeSort sempre retorna um array ordenado em ordem crescente.
+
+Este exemplo foi criado em JavaScript. Para mais informações, acesse: \link{https://developer.mozilla.org/pt-BR/docs/Web/JavaScript}{JavaScript}. \\
+
+
+
+
