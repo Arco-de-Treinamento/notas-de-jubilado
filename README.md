@@ -2,7 +2,7 @@
   <img src = "res/img/chaos.png" style = "width: 20%;">
 </p>
 <h1 align = "center"> 
-  Notas de Jubilado - Matemática Elementar
+  Notas de Jubilado - Matemática Elementar (Descontinuado)
  
   
   <p align="center">
@@ -24,14 +24,19 @@
 
 <h2 id = "sobre-este-projeto">👨🏻‍💻 Sobre este projeto</h2>
 
-Esse repositório mantém as notas de jubilado da disciplina Matemática Elementar do Bacharelado em Tecnologia da Informação da Universidade Federal do Rio Grande do Norte.
+<!-- Esse repositório mantém as notas de jubilado da disciplina Matemática Elementar do Bacharelado em Tecnologia da Informação da Universidade Federal do Rio Grande do Norte.
 
 As **"Notas de Jubilado"** não são um material oficial da matéria, sendo estritamente uma **paródia** das [notas de aula](https://github.com/matematica-elementar/notas-de-aula) oficiais, construídas com o intuito de descontrair durante os estudos da matemática discreta. Em hipótese nenhuma utilize esse artigo como única fonte de conhecimento.
 
 _Considere-se avisado..._
 
-_Lembre-se que existe um motivo para esse título..._
+_Lembre-se que existe um motivo para esse título..._ -->
 
+🐲 Esse projeto foi descontinuado devido as recentes mudanças de metodologia e grade curricular da matéria Matemática Elementar do Bacharelado em Tecnologia da Informação da Universidade Federal do Rio Grande do Norte. 
+
+🐲 Espero que o conteúdo aqui presente e os métodos desenvolvidos para a utilização do LaTeX possa te ajudar de alguma forma.
+
+🐲 De qualquer forma, o projeto "vai ficar bem aqui".
 
 ***
 
