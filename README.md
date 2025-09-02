@@ -2,9 +2,9 @@
   <img src = "res/img/chaos.png" style = "width: 20%;">
 </p>
 <h1 align = "center"> 
-  Notas de Jubilado - Matemática Elementar (Descontinuado)
+  Notas de Jubilado - Matemática Elementar
  
-  
+  VOLTANDO PQ ESTOU COM ODIO DE CALCULO I
   <p align="center">
     <img src="https://img.shields.io/github/last-commit/JosManoel/notas-de-jubilado">
     <img src="https://img.shields.io/github/license/JosManoel/notas-de-jubilado">
